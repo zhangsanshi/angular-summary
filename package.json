@@ -1,0 +1,31 @@
+{
+  "name": "angular-summary",
+  "version": "0.0.0",
+  "description": "a summary in the project for using angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangsanshi/angular-summary.git"
+  },
+  "keywords": [
+    "angular",
+    "summary",
+    "project"
+  ],
+  "author": "zhangsanshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhangsanshi/angular-summary/issues"
+  },
+  "homepage": "https://github.com/zhangsanshi/angular-summary",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "bower": "^1.3.12",
+    "grunt-html2js": "^0.3.0",
+    "grunt-contrib-htmlmin": "^0.4.0",
+    "grunt-spritesmith": "^4.2.0"
+  }
+}

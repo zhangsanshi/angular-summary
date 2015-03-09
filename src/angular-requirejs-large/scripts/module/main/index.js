@@ -1,0 +1,5 @@
+define([
+    "./router"
+    ,'./service'
+    ,'./controller'
+]);

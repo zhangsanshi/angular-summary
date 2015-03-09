@@ -1,0 +1,21 @@
+{
+  "name": "angular-summary",
+  "version": "0.0.0",
+  "description": "angular summary lib dependencies",
+  "authors": [
+    "zhangsanshi"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.14",
+    "angular-ui-router": "~0.2.13",
+    "requirejs": "~2.1.16"
+  }
+}
