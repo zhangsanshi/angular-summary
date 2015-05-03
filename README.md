@@ -15,3 +15,5 @@
             演示用requirejs管理小型项目时的项目组织
        - angular-requirejs-large
             演示用requirejs管理较大型项目时的项目组织
+       - angular-form
+            一个关于angular-form验证的简略版
