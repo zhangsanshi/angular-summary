@@ -4,16 +4,19 @@
         <div>
             <input type="text" ng-model="form.username" name="username" required="required"/>
         </div>
-
-        <div>
-            <input type="text" ng-model="form.password" name="password" required="required"/>
-        </div>
-        <div form-valid1 form-valid-for="testForm1" form-valid-item="testForm1.username"
+        <div form-valid valid-item="username"
              valid-message='{"required": "请输入用户名"}'>
         </div>
-        <div form-valid1 form-valid-for="testForm1" form-valid-item="testForm1.password"
-             valid-message='{required: "请输入密码"}'>
+        <br/>
+        <p>//密码输入define会提示自定义</p>
+        <div>
+            <input type="text" ng-model="form.password" define
+                   name="password" required="required"/>
+        </div>
+        <div form-valid valid-item="password"
+             valid-message='{required: "请输入密码", define: "自定义错误"}'>
         </div>
         <input type="submit" value="提交"/>
+
     </form>
 </div>

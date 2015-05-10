@@ -19,6 +19,15 @@
         }
 
     }])
+        .config(function () {
+
+        })
+        .config(function () {
+
+        })
+        .config(function () {
+
+        })
     .run(['$rootScope', function ($rootScope) {
         //类似于main方法
     }])
