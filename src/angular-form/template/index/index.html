@@ -2,9 +2,9 @@
     <h3>{{message}}</h3>
     <form action="" name="testForm1" >
         <div>
-            <input type="text" ng-model="form.username" name="username" required="required"/>
+            <input type="text" ng-model="form.username" name="{{inputname.name}}" required="required"/>
         </div>
-        <div form-valid valid-item="username"
+        <div form-valid valid-item="{{inputname.name}}"
              valid-message='{"required": "请输入用户名"}'>
         </div>
         <br/>
