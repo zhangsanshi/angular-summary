@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-sm-3 form-group">
+        <select ng-model="form.pageSize" class="form-control"
+                ng-change="action.pageChanged(true)"
+                ng-options="key for (key, value) in PageSize"></select>
+    </div>
+    <div class="col-sm-3 form-group">
+        <select ng-model="form.filter" class="form-control"
+                ng-change="action.pageChanged(true)"
+                ng-options="key as value for (key, value) in Filter">
+            <option value="">请选择过滤条件</option>
+                </select>
+    </div>
+    <table class="table">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+        </tr>
+        <tr ng-repeat="item in list">
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+        </tr>
+    </table>
+    <uib-pagination total-items="form.totalItems" max-size="5"
+                    ng-model="form.currentPage" ng-change="action.pageChanged()"></uib-pagination>
+</div>
