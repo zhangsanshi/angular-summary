@@ -21,6 +21,10 @@
             <td>{{item.name}}</td>
         </tr>
     </table>
-    <uib-pagination total-items="form.totalItems" max-size="5"
-                    ng-model="form.currentPage" ng-change="action.pageChanged()"></uib-pagination>
+    <!--这里的ng-if为了处理刷新后分页到不了第二页的情况-->
+    <div ng-if="form.totalItems">
+        <uib-pagination total-items="form.totalItems" max-size="5"
+                        ng-model="form.currentPage" ng-change="action.pageChanged()"></uib-pagination>
+    </div>
+
 </div>

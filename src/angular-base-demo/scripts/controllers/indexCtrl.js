@@ -48,7 +48,9 @@
             $scope.Filter = Filter;
             //把需要发送给后端的数据放置在同一个对象内，
             //在发送请求的时候，会很方便，只需要发送此对象
-            //而且解决了scope问题
+            //而且解决了scope问题,在页面产生多个scope的时候，
+            //使用对象会避免绝大多数问题，父子scope是通过原型链来查找属性的，
+            //如果值绑定，很容易造成属性绑在子scope上，而对象则会去scope层级查找
             $scope.form = {
                 currentPage: 1,
                 pageSize: 10

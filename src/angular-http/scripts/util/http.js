@@ -69,8 +69,10 @@
              * 需要修改data以及 Content-Type
              * */
 
-                //更改默认Content-Type
+                //更改post,put默认Content-Type
             $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
+            $httpProvider.defaults.headers.put['Content-Type'] = 'application/x-www-form-urlencoded;charset=utf-8';
+
 
             //添加HTTP头部，说明是ajax请求(like jQuery)
             $httpProvider.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

@@ -9,6 +9,8 @@
             演示图片压缩
        - angular-http
             则是重写了angular的部分http
+       - angular-base-demo
+            一个简单的查询列表demo
        - angular-lazyload
             演示如何懒加载JS,CSS
        - angular-requirejs
