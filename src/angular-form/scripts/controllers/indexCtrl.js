@@ -6,7 +6,11 @@
 (function(module) {
     function indexCtrl ($scope) {
         $scope.message = "Hello";
+        $scope.inputname = {
+            name: "username"
+        };
     }
+
     indexCtrl.$inject = ['$scope'];
     module
         .controller('indexCtrl', indexCtrl);
