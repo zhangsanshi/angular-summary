@@ -13,6 +13,10 @@ module.exports = function (grunt) {
             main: {
                 src: ['src/angular-html2js/template/**/**.html'],
                 dest: 'src/angular-html2js/scripts/templates.js'
+            },
+            template: {
+                src: ['src/angular-template-template/template/**/**.html'],
+                dest: 'src/angular-template-template/scripts/templates.js'
             }
         },
         sprite: {
